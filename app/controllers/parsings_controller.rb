@@ -1,6 +1,3 @@
-require 'rubygems'
-require 'nokogiri'
-require 'open-uri'
 # Class for parsing rss
 class ParsingsController < ApplicationController
   def index
