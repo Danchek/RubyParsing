@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Parsings</h1>
+
+
+<% @parsings.each do |pars| %>
+<div>
+  <audio controls> <source src=<%= pars.to_s %> type="audio/mpeg"> </audio>
+<div>
+<% end %>
+
