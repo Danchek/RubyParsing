@@ -5,7 +5,10 @@
 
 <% @parsings.each do |pars| %>
 <div>
-  <audio controls> <source src=<%= pars.to_s %> type="audio/mpeg"> </audio>
-<div>
+  <div>
+    <%= pars[:name] %>
+  </div>
+  <audio controls style='width: 600px'> <source src=<%= pars[:source] %> type="audio/mpeg"> </audio>
+</div>
 <% end %>
 
